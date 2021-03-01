@@ -11,6 +11,7 @@ public class NumLetras66131 {
 	String[] unid = {"cero" , "uno" ,"dos" , "tres" , "cuatro" , "cinco" , "seis" , "siete" , "ocho" , "nueve" };
 	String[] dece = { "diez" , "veinte" , "treinta" , "cuarenta" , "cincuenta" , "sesenta" , "setenta", "ochenta" , "noventa" };
         String[] special = {"once", "doce", "trece", "catorce", "quince"};
+        String[] dece2 = {"dieci", "veinti"};
         
         while(resp==1){
             System.out.println("Ingrese un número dentro del rango 0-99");
@@ -27,6 +28,9 @@ public class NumLetras66131 {
             }
             else if(num>10 && num<=15){
                 System.out.println("El número " + num + " escrito en letras es: " + special[num-11]);
+            }
+            else if(num>=16 && num<=19 || num>=21 && num<=29){
+                System.out.println("El número " + num + " escrito en letras es: " + dece2[dec-1] + unid[uni]);
             }
             else{
                 System.out.println("El número " + num + " escrito en letras es: " + dece[dec-1] + " y " + unid[uni]);
